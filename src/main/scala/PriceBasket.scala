@@ -1,3 +1,4 @@
+import models.Discount
 import models.Item
 import services.Pricing
 import utils.Constants.APPLES
@@ -6,7 +7,6 @@ import utils.Constants.MILK
 import utils.Constants.SOUP
 import utils.Constants.NO_OFFERS_AVAILABLE
 import utils.Constants.UNKNOWN
-import utils.Discount
 import utils.Constants.MILK_PRICE
 import utils.Constants.SOUP_PRICE
 import utils.Constants.UNKNOWN_PRICE

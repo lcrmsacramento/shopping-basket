@@ -1,6 +1,7 @@
 package utils
 
 import models.Item
+import models.Discount
 import utils.Constants.APPLES
 import utils.Constants.BREAD
 import utils.Constants.MILK
@@ -9,11 +10,6 @@ import utils.Constants.APPLES_DISCOUNT_DESCRIPTION
 import utils.Constants.BREAD_DISCOUNT_DESCRIPTION
 import utils.Constants.APPLES_DISCOUNT
 import utils.Constants.BREAD_DISCOUNT
-
-// this will serve as our base data structure for the discounts
-case class Discount(description: String, value: String) {
-  override def toString: String = s"$description: $value"
-}
 
 object SpecialOffers {
 

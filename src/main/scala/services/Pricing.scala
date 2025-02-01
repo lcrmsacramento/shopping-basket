@@ -1,8 +1,8 @@
 package services
 
+import models.Discount
 import models.Item
 import utils.SpecialOffers
-import utils.Discount
 
 object Pricing {
 

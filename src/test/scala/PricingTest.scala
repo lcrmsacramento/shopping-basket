@@ -1,7 +1,7 @@
 import org.scalatest.funsuite.AnyFunSuite
+import models.Discount
 import models.Item
 import services.Pricing
-import utils.Discount
 import utils.SpecialOffers
 import utils.Constants
 import utils.Constants.APPLES
