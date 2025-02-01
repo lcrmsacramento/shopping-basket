@@ -1,0 +1,12 @@
+target/
+lib_managed/
+src_managed/
+project/target/
+project/project/
+.cache
+.history
+.lib/
+.metals/
+.vscode/
+*~
+.scalafmt.conf 
