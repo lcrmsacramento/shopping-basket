@@ -22,19 +22,34 @@ object PriceBasket {
     }
 
     // we will receive the items as arguments
-    // those arguments are then converted to a list of Items using a pattern match
+    // those arguments are then converted to a list of Items
     val items = args.toList.map {
       case APPLES => Item(APPLES, APPLES_PRICE)
       case BREAD  => Item(BREAD, BREAD_PRICE)
       case MILK   => Item(MILK, MILK_PRICE)
       case SOUP   => Item(SOUP, SOUP_PRICE)
-      case _      => Item(UNKNOWN, UNKNOWN_PRICE)
+      case _ =>
+        Item(
+          UNKNOWN,
+          UNKNOWN_PRICE
+        ) // if the item is not recognised, we will assign a price of 0
     }
 
     // calculate the total price, discount value and final price
     val (totalPrice, discountValue, finalPrice, listOffers) =
       Pricing.calculatePrice(items)
 
+    /** print the final receipt.
+      *
+      * @param totalPrice
+      *   total price of the items, before discounts
+      * @param discountValue
+      *   total discount value
+      * @param finalPrice
+      *   final price, after discounts
+      * @param listOffers
+      *   a list of discounts applied
+      */
     def printReceipt(
         totalPrice: BigDecimal,
         discountValue: BigDecimal,
