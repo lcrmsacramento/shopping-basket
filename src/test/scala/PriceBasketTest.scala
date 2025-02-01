@@ -12,7 +12,7 @@ import utils.Constants.NO_OFFERS_AVAILABLE
 
 class PriceBasketTest extends AnyFunSuite {
 
-  /** run the ShoppingBasket application with the given arguments
+  /** run the PriceBasket application with the given arguments.
     *
     * @param args
     *   a set of strings representing the items
